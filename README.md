@@ -2,8 +2,6 @@
 The only necessary files, to generate images are 'cifar_image_generator', 'ddpm_conditional', 'modules' and 'utils'. The model is saved in the path 'models/DDPM_conditional/'. To continue training the 'ema_ckpt_{epoch}.pt', 'ckpt_{epoch}.pt' and 'optim_{epoch}.pt' files are needed, the variable 'epoch' indicates the trained epochs of the model and has to be set in the 'latest_epoch.txt' file. All files can be found in the hessenbox cloud given in the paper.
 
 ## Train a Diffusion Model:
-### Conditional Training
-
 ```python
    import ddpm_conditional
 epochs = 700
@@ -16,7 +14,7 @@ ddpm_conditional.training(
 
 Hyperparameters can be configured in ```ddpm_conditional.py```
 
-# Sampling
+## Sampling
 ```python
    import cifar_image_generator as cig
    model_epoch = 50
