@@ -3,6 +3,7 @@ The only necessary files, to generate images are 'cifar_image_generator', 'ddpm_
 
 ## Train a Diffusion Model:
 ### Conditional Training
+
 ```python
    import ddpm_conditional
 epochs = 700
@@ -10,7 +11,8 @@ dataset_path = "../cifar5m_jpg_data_with_classes/"
 ddpm_conditional.training(
     epochs = epochs, 
     dataset_path = dataset_path
-)```
+)
+```
 
 Hyperparameters can be configured in ```ddpm_conditional.py```
 
